@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'spn';
+    src: url(../spn.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+:root{
+    --Vermelho: #E50914;
+    --Preto: #141414;
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+.logo{
+    color: var(--Vermelho);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-left: 10px;   
+    }
+
+/*Elemento base*/
+body{
+    background: var(--Preto);
+    font-family: 'Arial', Times, serif;   
+    }
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+    }
+    
+header nav a:hover{
+    color: #fff;
+    }
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+/*filme principal*/
+
+.spn{
+    font-size: 16px;
+    background:url(../imagens/spn.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction:   column;
+    justify-content: center ;
+    align-items: flex-start;
+    }
+
+.titulo{
+    font-size: 40px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 15%;
+    font-family: 'spn';
+    margin-bottom: 10px;
+    }
+
+.botao{
+    background-color: rgba(0, 0, 0, .50)  ;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;    
+    }
+
+.descricao{
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    }
+
+.botao:hover{
+    background-color: white;
+    color: black;
+    transition: .5s ease all;
+    }
+
+.botao i{
+    margin-right: 5px;
+    }   
+
+.spn .container{
+    width: 60%;
+    }
+
+.box-filme{
+    height: 60%;
+    width: 30%;
+    display: block;
+    }
+
+.carrosel-filmes{
+    margin-top:5px;
+    }
